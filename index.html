@@ -1,109 +1,104 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta name="author" content="JICA">
-	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1, minimum-scale=1">
-	<meta name="description" content="HTML5 시멘틱 마크업 및 CSS 실전 예제.">
-	<meta name="keyword" content="HTML5, Semantic, CSS, stylesheet">
-	<title>HTML5 실습</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="default.css">
-	<script src="html5shiv.min.js"></script>
-</head>
+	<head>
+		<meta name="author" content="JICA">
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, minimum-scale=1">
+		<meta name="description" content="HTML5 시멘틱 마크업 및 CSS 실전 예제.">
+		<meta name="keyword" content="HTML5, Semantic, CSS, stylesheet">
+		<title>HTML5 실습</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="default.css">
+		<script src="html5shiv.min.js"></script>
+	</head>
 
-<body>
-<div class="container">
-	<a class="skip" href="#main">메뉴 건너뛰기</a>
-	<header class="header">
-		<h1>HTML5</h1>
-		<nav class="gnb">
-			<h2 class="sr">주 메뉴</h2>
-			<ul>
-				<li class="active">
-					<a href="#">Menu1</a>
-					<ul class="gnb-sub">
+	<body>
+		<div class="container">
+			<a class="skip" href="#main">메뉴 건너뛰기</a>
+			<header class="header">
+				<h1>HTML5</h1>
+				<nav class="gnb">
+					<h2 class="sr">주 메뉴</h2>
+					<button type="button">메뉴 열기</button>
+					<ul>
+						<li class="active">
+							<a href="#">Menu1</a>
+							<ul class="gnb-sub">
+								<li><a href="#">Menu1-1</a></li>
+								<li><a href="#">Menu1-2</a></li>
+								<li><a href="#">Menu1-3</a></li>
+								<li><a href="#">Menu1-4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Menu2</a>
+							<ul class="gnb-sub">
+								<li><a href="#">Menu2-1</a></li>
+								<li><a href="#">Menu2-2</a></li>
+								<li><a href="#">Menu2-3</a></li>
+								<li><a href="#">Menu2-4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Menu3</a>
+							<ul class="gnb-sub">
+								<li><a href="#">Menu3-1</a></li>
+								<li><a href="#">Menu3-2</a></li>
+								<li><a href="#">Menu3-3</a></li>
+								<li><a href="#">Menu3-4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Menu4</a>
+							<ul class="gnb-sub">
+								<li><a href="#">Menu4-1</a></li>
+								<li><a href="#">Menu4-2</a></li>
+								<li><a href="#">Menu4-3</a></li>
+								<li><a href="#">Menu4-4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="body">
+				<main id="main">
+					<article>
+						<h1>HTML5 시멘틱 실습</h1>
+						<section>
+							<h2>HTML5 블럭 컨테이너</h2>
+							<p>...</p>
+						</section>
+						<section>
+							<h2>HTML5 인라인 컨테이너</h2>
+							<p>...</p>
+						</section>
+					</article>
+				</main>
+				<nav class="lnb">
+					<h2>Menu1</h2>
+					<ul>
 						<li><a href="#">Menu1-1</a></li>
 						<li><a href="#">Menu1-2</a></li>
 						<li><a href="#">Menu1-3</a></li>
 						<li><a href="#">Menu1-4</a></li>
 					</ul>
-				</li>
-				<li>
-					<a href="#">Menu2</a>
-					<ul class="gnb-sub">
-						<li><a href="#">Menu2-1</a></li>
-						<li><a href="#">Menu2-2</a></li>
-						<li><a href="#">Menu2-3</a></li>
-						<li><a href="#">Menu2-4</a></li>
+				</nav>
+				<aside class="aside">
+					<h2>Quick link</h2>
+					<ul>
+						<li><a href="#">Link-1</a></li>
+						<li><a href="#">Link-2</a></li>
+						<li><a href="#">Link-3</a></li>
+						<li><a href="#">Link-4</a></li>
 					</ul>
-				</li>
-				<li>
-					<a href="#">Menu3</a>
-					<ul class="gnb-sub">
-						<li><a href="#">Menu3-1</a></li>
-						<li><a href="#">Menu3-2</a></li>
-						<li><a href="#">Menu3-3</a></li>
-						<li><a href="#">Menu3-4</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Menu4</a>
-					<ul class="gnb-sub">
-						<li><a href="#">Menu4-1</a></li>
-						<li><a href="#">Menu4-2</a></li>
-						<li><a href="#">Menu4-3</a></li>
-						<li><a href="#">Menu4-4</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<div class="body">
-		<main id="main">
-			<article>
-				<h1>HTML5 시멘틱 실습</h1>
-				<section>
-					<h2>HTML5 블럭 컨테이너</h2>
-					<p>...</p>
-				</section>
-				<section>
-					<h2>HTML5 인라인 컨테이너</h2>
-					<p>...</p>
-				</section>
-			</article>
-		</main>
-		<nav class="lnb">
-			<h2>Menu1</h2>
-			<ul>
-				<li><a href="#">Menu1-1</a></li>
-				<li><a href="#">Menu1-2</a></li>
-				<li><a href="#">Menu1-3</a></li>
-				<li><a href="#">Menu1-4</a></li>
-			</ul>
-		</nav>
-		<aside class="aside">
-			<h2>Quick link</h2>
-			<ul>
-				<li><a href="#">Link-1</a></li>
-				<li><a href="#">Link-2</a></li>
-				<li><a href="#">Link-3</a></li>
-				<li><a href="#">Link-4</a></li>
-			</ul>
-		</aside>
-	</div>
-	<footer class="footer">
-		<p>Copyright &copy; JICA. All rights reserved.</p>
-	</footer>
-</div>
-<script src="jquery-1.11.3.min.js"></script>
-<script src="default.js"></script>
-</body>
+				</aside>
+			</div>
+			<footer class="footer">
+				<p>Copyright &copy; JICA. All rights reserved.</p>
+			</footer>
+		</div>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="default.js"></script>
+	</body>
 
 </html>
-
-
-
-
-
-
