@@ -21,6 +21,7 @@ body{
 	padding: 0 10px;
 	margin: 0 auto;
 }
+.header{padding: 10px 0 0 0;}
 .header>h1{
 	font-size: 32px;
 	margin: 0;
@@ -199,6 +200,7 @@ main{
 		display: block;
 		clear: both;
 	}
+	main{min-height: 300px;}
 	main,
 	.lnb,
 	.aside{box-sizing: border-box;}
@@ -225,7 +227,7 @@ main{
 
 /* Desktop */
 @media (min-width:1025px){
-	.container{
+	.root{
 		width: 960px;
 		margin: 0 auto;
 	}
