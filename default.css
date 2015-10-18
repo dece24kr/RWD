@@ -1,6 +1,41 @@
 @charset "utf-8";
 
 /* All */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?portoy');
+	src:url('fonts/icomoon.eot?portoy#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?portoy') format('truetype'),
+		url('fonts/icomoon.woff?portoy') format('woff'),
+		url('fonts/icomoon.svg?portoy#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alert:before {
+	content: "\f02d";
+}
+.icon-home:before {
+	content: "\e800";
+}
+.icon-heart:before {
+	content: "\e801";
+}
+
 .header ul,
 .lnb ul,
 .aside ul,
@@ -26,6 +61,7 @@ body{
 	font-size: 32px;
 	margin: 0;
 }
+.body{margin: 15px 0 0 0;}
 main,
 .lnb,
 .aside{ margin-bottom: 15px;}
@@ -79,14 +115,49 @@ main{
 	height: 1px;
 	overflow: hidden;
 }
+article>h1{
+	font-size: 24px;
+	color: #666;
+}
+article>h1>i{
+	color: #444;
+}
+.swiper-container{
+	overflow: hidden;
+	position: relative;
+}
+.swiper-wrapper{
+	white-space: nowrap;
+	font-size: 0;
+	line-height: 0;
+}
+.swiper-slide{
+	height: 300px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.swiper-slide:nth-of-type(odd){background: #eee;}
+.swiper-slide:nth-of-type(even){background: #bbb;}
+.swiper-pagination{
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.swiper-pagination>span{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: #ddd;
+	margin: 0 2px;
+	border-radius: 3px;
+}
+.swiper-pagination-bullet-active{background: #666!important;}
 
 /* Mobile */
 .skip{display: none;}
-.gnb{
-	margin: 15px 0;
-	border-radius: 5px;
-	overflow: hidden;
-}
 .gnb>button{
 	position: absolute;
 	right: 10px;
@@ -107,9 +178,14 @@ main{
 	right: 4px;
 	border-top: 12px double #fff;
 	border-bottom: 12px double #fff;
-	height: 4px;
+	height: 28px;
 }
-.gnb>ul{ display: none;}
+.gnb>ul{ 
+	display: none;
+	margin: 15px 0 0 0;
+	border-radius: 5px;
+	overflow: hidden;
+}
 .gnb li{
 	border-top: 1px solid #777;
 }
@@ -157,6 +233,7 @@ main{
 		display: block!important;
 		overflow: hidden;
 		height: 72px;
+		border-radius: 0;
 	}
 	.gnb li{border: 0;}
 	.gnb>ul>li{float: left;}
@@ -186,7 +263,7 @@ main{
 		width: 100%;
 		top: 36px;
 		left: 0;
-		border-radius: 0 3px 3px;
+		border-radius: 0 0 3px 3px;
 	}
 	.gnb-sub>li{
 		float: left;

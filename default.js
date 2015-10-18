@@ -15,4 +15,14 @@ jQuery(function($){
 	$(document).on("mouseover focus", ".gnb>ul>li>a", function(){
 		$(this).parent().addClass("active").siblings().removeClass("active");
 	});
+
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		slidesPerView: 1,
+		paginationClickable: true,
+		spaceBetween: 30,
+		loop: true
+	});
 });
